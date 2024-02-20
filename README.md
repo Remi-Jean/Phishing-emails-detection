@@ -7,6 +7,7 @@ It also contains the kaggle notebook used to create the model and to carry out t
 ## Preparation of the datasets
 #### Base datasets
 This project mainly used two datasets: the [Enron Email Dataset](http://www.cs.cmu.edu/~enron/) that contains more than 500,000 legitimate emails and [Jose Nazario's dataset](http://www.monkey.org/~jose/phishing) that contains 10,678 phishing emails.
+<br/>
 Another dataset has been used at the beginning, the dataset from the [Spam Assassin Project](http://spamassassin.apache.org/old/publiccorpus/) that contains 4,000 legitimate emails and nearly 2,000 spam emails
 
 #### Transformations of the datasets
@@ -24,8 +25,10 @@ Later on, the training dataset will be split in two subsets, one for the trainin
 
 #### Composition of the new datasets
 To test our models, we'll be using two datasets:
+<br/>
 **Dataset 1:** made of 10,678 phishing emails from Nazario's dataset and 10,678 ham emails from the Enron dataset for a total of 21,356 emails. The emails are used as they were in the original datasets.
 The training and validation dataset is made of 17,086 emails and the testing dataset of 4,270 emails.
+<br/>
 **Dataset 2:** same dataset as before, but the metadata from the emails of the enron dataset have been replaced using the replace_domains.py and replace_metadata.py scripts
 
 #### Transformation of the emails in images
