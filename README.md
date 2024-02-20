@@ -19,7 +19,8 @@ When we download Jose Nazario's dataset, we get ten or so files, each containing
 
 #### Creation of the new datasets
 The datasets that will be used by the model are all made using the following structure:
-[](dataset_structure.png)
+[<img src="/dataset_structure.png">]()
+<br/>
 We'll be using a ratio of 80% of the total emails for the training dataset and 20% for the testing dataset and we'll make sure that in each of those two datasets, there will be as many ham emails as phishing ones.
 Later on, the training dataset will be split in two subsets, one for the training (80% of the training dataset, 64% of the total number of emails) and one for the validation (20% of the training dataset, 16% of the total number of emails).
 
