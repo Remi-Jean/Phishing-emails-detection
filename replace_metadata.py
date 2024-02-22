@@ -24,9 +24,9 @@ os.makedirs(output_path,exist_ok=True)
 # Define the subfunction that will replace the old years by newer ones
 def replace_year(line):
     # Regular expression to match the date pattern
-    date_pattern = r'Date: (\w{3}, \d{2} \w{3} (?:19\d{2}|20(?:0[0-2]|09)) \d{2}:\d{2}:\d{2} [+-]\d{4} \(\w{3}\))'
-
-    # Define a function to replace the year with a random year betwee 2015 and 2022 if the year is before 2009
+    date_pattern = r'Date: (\w{3}, \d{2} \w{3} (?:19\d{2}|200[0-3]) \d{2}:\d{2}:\d{2} [+-]\d{4} \(\w{3}\))'
+    
+    # Define a function to replace the year with a random year between 2004 and 2022 if the year is before 2004
     def replace_year_func(match):
         date_string = match.group(0)
         year = int(re.search(r'\d{4}', date_string).group(0))  # Extract the year
